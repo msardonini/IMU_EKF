@@ -7,6 +7,7 @@ The matlab code was then converted to C code using Matlab C Coder
 and then renamed to .cpp just to have it in cpp format.
 
 It receives 9 parameters which must be initialized as follows (description given)
+
 float P[16];                //Covariance Matrix 4x4
 float quat[4];              //Quaternion Vector 4x1
 float Cov_info[3];          //Noise Covariance Info 3x1 (q,r_acc,r_mag) 
