@@ -347,11 +347,3 @@ void IMU_EKF2(float P[16], float q[4], const float Cov_info[3], const float
     q[i] /= y;
   }
 }
-
-void IMU_EKF2_initialize(void)
-{
-}
-
-void IMU_EKF2_terminate(void)
-{
-}
