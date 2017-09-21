@@ -12,7 +12,7 @@ float P[16];                //Covariance Matrix 4x4
 
 float quat[4];              //Quaternion Vector 4x1
 
-float Cov_info[3];          //Noise Covariance Info 3x1 (q,r_acc,r_mag) 
+float Cov_info[3]={0.00001,0.1,1};          //Noise Covariance Info 3x1 (q,r_acc,r_mag) 
 
                             //(q=noise variance of quaternion (equal for all)
                             
