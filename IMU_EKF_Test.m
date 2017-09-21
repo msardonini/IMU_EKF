@@ -14,3 +14,5 @@ ini=int8(1);                            %Initialize/Reset Covariance Matrix and 
 use_mag=int8(1);                        %Use magnetometer or not
 %% Run Function
 [P,q]=IMU_EKF(P,q,Cov_info,omega,accel,mag,dt,ini,use_mag)
+Cov_info=single([1;0.1;1]);       %Noise Variances information (q,r_acc,r_mag) < - - Assumes same q for all quat.
+[P,q]=IMU_EKF2(P,q,Cov_info,omega,accel,mag,dt,ini,use_mag)
